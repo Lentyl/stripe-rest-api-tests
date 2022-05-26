@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="5673" started-at="2022-05-26T09:29:22 CEST" finished-at="2022-05-26T09:29:28 CEST">
+    <groups>
+    </groups>
+    <test name="Create customer API test" duration-ms="5673" started-at="2022-05-26T09:29:22 CEST" finished-at="2022-05-26T09:29:28 CEST">
+      <class name="com.testcases.testcase1">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testcases.testcase1@a4ca3f6]" name="setUp" is-config="true" duration-ms="783" started-at="2022-05-26T09:29:21 CEST" finished-at="2022-05-26T09:29:22 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createCustomerWithInvalidKey(java.util.Hashtable)[pri:0, instance:com.testcases.testcase1@a4ca3f6]" name="createCustomerWithInvalidKey" duration-ms="3346" started-at="2022-05-26T09:29:22 CEST" data-provider="data" finished-at="2022-05-26T09:29:25 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=marco88@wp.pl, name=Marco Rubio, description=Adding the new customer Marcko Rubio to data base}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCustomerWithInvalidKey -->
+        <test-method status="PASS" signature="createCustomerWithValidKey(java.util.Hashtable)[pri:0, instance:com.testcases.testcase1@a4ca3f6]" name="createCustomerWithValidKey" duration-ms="700" started-at="2022-05-26T09:29:26 CEST" data-provider="data" finished-at="2022-05-26T09:29:26 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=mariusz88@gmial.com, name=Mariusz Podgorski, description=Adding the new customer Mariusz Pdgorski to data base}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCustomerWithValidKey -->
+        <test-method status="PASS" signature="createCustomerWithValidKey(java.util.Hashtable)[pri:0, instance:com.testcases.testcase1@a4ca3f6]" name="createCustomerWithValidKey" duration-ms="768" started-at="2022-05-26T09:29:26 CEST" data-provider="data" finished-at="2022-05-26T09:29:27 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=robert@wp.pl, name=Robert Materka, description=Adding the new customer Robert Materka to data base}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCustomerWithValidKey -->
+        <test-method status="PASS" signature="createCustomerWithValidKey(java.util.Hashtable)[pri:0, instance:com.testcases.testcase1@a4ca3f6]" name="createCustomerWithValidKey" duration-ms="725" started-at="2022-05-26T09:29:27 CEST" data-provider="data" finished-at="2022-05-26T09:29:28 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=michael88@wp.pl, name=Michael Jordan, description=Adding the new customer Michael Jordan to data base}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCustomerWithValidKey -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcases.testcase1@a4ca3f6]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-05-26T09:29:29 CEST" finished-at="2022-05-26T09:29:29 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testcases.testcase1 -->
+    </test> <!-- Create customer API test -->
+  </suite> <!-- Suite -->
+</testng-results>
