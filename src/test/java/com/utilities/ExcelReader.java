@@ -2,7 +2,10 @@ package com.utilities;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.math.BigDecimal;
 import java.util.Calendar;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.poi.common.usermodel.HyperlinkType;
 import org.apache.poi.ss.usermodel.DateUtil;
@@ -462,6 +465,22 @@ public class ExcelReader {
 	    	}
 	    }
 		return -1;
+	}
+	
+	public String scientificNotationNumberToString (String checkedString) {
+		
+		Matcher scientificNotation = Pattern.compile("-?\\d+(\\.\\d+)?[eE][+-]?\\d+").matcher(checkedString);
+		Matcher containsLetters = Pattern.compile("[a-zA-Z]+").matcher(checkedString);
+		
+		if(scientificNotation.find()) {
+			int val = new BigDecimal(checkedString).intValue();
+			return Integer.toString(val);
+		}
+		
+		if(!containsLetters.find())
+			return checkedString.replace(".", "");
+			
+		return checkedString;
 	}
 	
 }

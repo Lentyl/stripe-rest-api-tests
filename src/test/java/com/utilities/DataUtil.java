@@ -57,8 +57,9 @@ public class DataUtil extends BaseTest {
 
 				String testData = excel.getCellData(config.getProperty("testDataSheetName"), cNum, rNum);
 				String colName = excel.getCellData(config.getProperty("testDataSheetName"), cNum, colStartColNum);
-
-				table.put(colName, testData);
+				
+				
+				table.put(colName, excel.scientificNotationNumberToString(testData));
 
 			}
 
@@ -67,5 +68,6 @@ public class DataUtil extends BaseTest {
 		}
 		return data;
 	}
+
 
 }

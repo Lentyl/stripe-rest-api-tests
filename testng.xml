@@ -7,7 +7,7 @@
 
 	<test name="Create customer API test">
 		<classes>
-			<class name="com.testcases.testcase1" />
+			<class name="com.testcases.CustomerTests" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
