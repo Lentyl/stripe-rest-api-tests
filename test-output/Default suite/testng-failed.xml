@@ -8,6 +8,7 @@
           <include name="createCustomerWithInvalidEmail" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="createCustomerWithInvalidPhoneNumber" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.testcases.CustomerTests -->
     </classes>

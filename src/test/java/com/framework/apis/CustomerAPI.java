@@ -15,7 +15,8 @@ public class CustomerAPI extends BaseTest {
 	public static Response postRqCreateCustomerWithValidKey(Hashtable<String, String> data) {
 
 		Response response = given().auth().basic(config.getProperty("validKey"), "")
-				.formParam("email", data.get("email")).formParam("description", data.get("description"))
+				.formParam("email", data.get("email"))
+				.formParam("description", data.get("description"))
 				.formParam("name", data.get("name")).post(config.getProperty("customerAPIEndPoint"));
 
 		if (getJsonKeyValue(response, "name").equals("Mariusz Podgorski"))
@@ -55,7 +56,7 @@ public class CustomerAPI extends BaseTest {
 		
 		Response response = given().auth().basic(config.getProperty("validKey"), "")
 				.formParam("balance", data.get("balance"))
-				.get(config.getProperty("customerAPIEndPoint"));
+				.post(config.getProperty("customerAPIEndPoint"));
 
 		return response;
 	}
@@ -64,16 +65,51 @@ public class CustomerAPI extends BaseTest {
 		
 		Response response = given().auth().basic(config.getProperty("validKey"), "")
 				.formParam("phone", data.get("phone"))
+				.formParam("name", data.get("name"))
+				.post(config.getProperty("customerAPIEndPoint"));
+
+		return response;
+	}
+	
+	public static Response getRqSearchExistingTwoCustomers(Hashtable<String, String> data) {
+		
+		Response response = given().auth().basic(config.getProperty("validKey"), "")
+				.formParam("limit", "2")
 				.get(config.getProperty("customerAPIEndPoint"));
 
 		return response;
 	}
 	
-	public static Response postRqCustomerWithInvalidEmail(Hashtable<String, String> data) {
+	public static Response getRqSearchWithoutQueryParameter(Hashtable<String, String> data) {
+
+		Response response = given().auth().basic(config.getProperty("validKey"), "")
+				.get(config.getProperty("customerAPIEndPoint")+"/search");
+
+		return response;
+	}
+	
+	public static Response getRqSearchCustomersWithValidQueryParameter(Hashtable<String, String> data) {
+
+		Response response = given().auth().basic(config.getProperty("validKey"), "")
+				.formParam("query", "email~\""+data.get("email")+"\"")
+				.get(config.getProperty("customerAPIEndPoint")+"/search");
+
+		return response;
+	}
+	
+	public static Response postRqUpdateCustomer(Hashtable<String, String> data) {
+
+		Response response = given().auth().basic(config.getProperty("validKey"), "")
+				.formParam("description", data.get("description"))
+				.post(config.getProperty("customerAPIEndPoint")+"/"+RunTimeTestData.customerID);
+
+		return response;
+	}
+	
+	public static Response postRqCreateCustomerWithInvalidEmail(Hashtable<String, String> data) {
 		
 		Response response = given().auth().basic(config.getProperty("validKey"), "")
 				.formParam("email", data.get("email"))
-				.formParam("name", data.get("name"))
 				.get(config.getProperty("customerAPIEndPoint"));
 
 		return response;
@@ -82,10 +118,15 @@ public class CustomerAPI extends BaseTest {
 	public static Response deleteRqDeleteCustomer(Hashtable<String, String> data) {
 		Response response = given().auth().basic(config.getProperty("validKey"), "")
 				.delete(config.getProperty("customerAPIEndPoint")+"/"+RunTimeTestData.customerID);
-		
-		response.prettyPrint();
 
 		return response;
 	}
+	
+	
+	public static Response getRqRetrieveCustomer(Hashtable<String, String> data) {
+		Response response = given().auth().basic(config.getProperty("validKey"), "")
+				.get(config.getProperty("customerAPIEndPoint")+"/"+RunTimeTestData.customerID);
 
+		return response;
+	}
 }

@@ -9,10 +9,96 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">2,771</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">13</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">13,394</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.testcases.CustomerTests</td><td><a href="#m0">createCustomerWithInvalidEmail</a></td><td rowspan="1">1654783479805</td><td rowspan="1">2686</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.testcases.CustomerTests</td><td><a href="#m0">createCustomerWithInvalidEmail</a></td><td rowspan="1">1655213521199</td><td rowspan="1">670</td></tr><tr class="failedeven"><td><a href="#m1">createCustomerWithInvalidPhoneNumber</a></td><td rowspan="1">1655213520447</td><td rowspan="1">733</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="13">com.testcases.CustomerTests</td><td><a href="#m2">RetrieveCustomer</a></td><td rowspan="1">1655213525537</td><td rowspan="1">785</td></tr><tr class="passedeven"><td><a href="#m3">createCustomerWithInvalidBalance</a></td><td rowspan="1">1655213523375</td><td rowspan="1">682</td></tr><tr class="passedeven"><td><a href="#m4">createCustomerWithInvalidKey</a></td><td rowspan="1">1655213517622</td><td rowspan="1">423</td></tr><tr class="passedeven"><td><a href="#m5">createCustomerWithValidKey</a></td><td rowspan="3">1655213516035</td><td rowspan="3">778</td></tr><tr class="passedeven"><td><a href="#m6">createCustomerWithValidKey</a></td></tr><tr class="passedeven"><td><a href="#m7">createCustomerWithValidKey</a></td></tr><tr class="passedeven"><td><a href="#m8">deleteCustomer</a></td><td rowspan="1">1655213524885</td><td rowspan="1">637</td></tr><tr class="passedeven"><td><a href="#m9">getCustomersWithSpecifiedEmailAddress</a></td><td rowspan="1">1655213521883</td><td rowspan="1">754</td></tr><tr class="passedeven"><td><a href="#m10">listAllCustomers</a></td><td rowspan="1">1655213518053</td><td rowspan="1">908</td></tr><tr class="passedeven"><td><a href="#m11">searchCustomersWithValidQueryParameter</a></td><td rowspan="1">1655213519722</td><td rowspan="1">719</td></tr><tr class="passedeven"><td><a href="#m12">searchExistingTwoCustomers</a></td><td rowspan="1">1655213518970</td><td rowspan="1">744</td></tr><tr class="passedeven"><td><a href="#m13">searchWithoutQueryParameter</a></td><td rowspan="1">1655213522644</td><td rowspan="1">711</td></tr><tr class="passedeven"><td><a href="#m14">updateCustomer</a></td><td rowspan="1">1655213524065</td><td rowspan="1">811</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.testcases.CustomerTests#createCustomerWithInvalidEmail</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{email=marco88wp.pl, name=Marco Rubio}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.testcases.CustomerTests#createCustomerWithInvalidEmail</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{email=marco88wp.pl, name=Marco Rubio}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at org.testng.Assert.assertEquals(Assert.java:1274)
+	at com.testcases.CustomerTests.createCustomerWithInvalidEmail(CustomerTests.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.testcases.CustomerTests#createCustomerWithInvalidPhoneNumber</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{phone=string, name=Marek Jaworski}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at org.testng.Assert.assertEquals(Assert.java:1274)
+	at com.testcases.CustomerTests.createCustomerWithInvalidPhoneNumber(CustomerTests.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.testcases.CustomerTests#RetrieveCustomer</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{deleted=true, name=Mariusz Podgorski}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.testcases.CustomerTests#createCustomerWithInvalidBalance</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{name=Marek Jaworski, balance=string}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.testcases.CustomerTests#createCustomerWithInvalidKey</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{currency=PLN, phone=654789543, email=marek88@gmial.com, name=Marek Jaworski, description=Adding the new customer Mariusz Pdgorski to data base, balance=7000}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.testcases.CustomerTests#createCustomerWithValidKey</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{currency=USD, phone=987654321, email=robert@wp.pl, name=Robert Materka, description=Adding the new customer Robert Materka to data base, balance=87650}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.testcases.CustomerTests#createCustomerWithValidKey</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{currency=EU, phone=657843891, email=michael88@wp.pl, name=Michael Jordan, description=Adding the new customer Michael Jordan to data base, balance=65430}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.testcases.CustomerTests#createCustomerWithValidKey</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{currency=PLN, phone=123456789, email=mariusz88@gmial.com, name=Mariusz Podgorski, description=Adding the new customer Mariusz Pdgorski to data base, balance=6000}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.testcases.CustomerTests#deleteCustomer</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{testData=N/A}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.testcases.CustomerTests#getCustomersWithSpecifiedEmailAddress</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{email=mariusz88@gmial.com, name=Mariusz Podgorski}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.testcases.CustomerTests#listAllCustomers</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{testData=N/A}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.testcases.CustomerTests#searchCustomersWithValidQueryParameter</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{email=krowa88@wp.pl, name=Marek Krowa}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.testcases.CustomerTests#searchExistingTwoCustomers</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{testData=N/A}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.testcases.CustomerTests#searchWithoutQueryParameter</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{testData=N/A}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.testcases.CustomerTests#updateCustomer</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{description=Updating customer Mariusz Pdgorski}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

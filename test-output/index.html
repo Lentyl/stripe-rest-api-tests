@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Marian\AppData\Local\Temp\testng-eclipse-138012067\testng-customsuite.xml</span>
+                    <span>C:\Users\Marian\AppData\Local\Temp\testng-eclipse-714833326\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">15 methods, 2 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.CustomerTests" class="method navigator-link" hash-for-method="createCustomerWithInvalidEmail({email=marco88wp.pl, name=Marco Rubio})">createCustomerWithInvalidEmail({email=marco88wp.pl, name=Marco Rubio})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.CustomerTests" class="method navigator-link" hash-for-method="createCustomerWithInvalidPhoneNumber({phone=string, name=Marek Jaworski})">createCustomerWithInvalidPhoneNumber({phone=string, name=Marek Jaworski})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +123,67 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.CustomerTests" class="method navigator-link" hash-for-method="createCustomerWithInvalidEmail({email=marco88wp.pl, name=Marco Rubio})">createCustomerWithInvalidEmail({email=marco88wp.pl, name=Marco Rubio})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.CustomerTests" class="method navigator-link" hash-for-method="RetrieveCustomer({deleted=true, name=Mariusz Podgorski})">RetrieveCustomer({deleted=true, name=Mariusz Podgorski})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.CustomerTests" class="method navigator-link" hash-for-method="createCustomerWithInvalidBalance({name=Marek Jaworski, balance=string})">createCustomerWithInvalidBalance({name=Marek Jaworski, balance=string})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.CustomerTests" class="method navigator-link" hash-for-method="createCustomerWithInvalidKey({currency=PLN, phone=654789543, email=marek88@gmial.com, name=Marek Jaworski, description=Adding the...)">createCustomerWithInvalidKey({currency=PLN, phone=654789543, email=marek88@gmial.com, name=Marek Jaworski, description=Adding the...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.CustomerTests" class="method navigator-link" hash-for-method="createCustomerWithValidKey({currency=USD, phone=987654321, email=robert@wp.pl, name=Robert Materka, description=Adding the new ...)">createCustomerWithValidKey({currency=USD, phone=987654321, email=robert@wp.pl, name=Robert Materka, description=Adding the new ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.CustomerTests" class="method navigator-link" hash-for-method="createCustomerWithValidKey({currency=EU, phone=657843891, email=michael88@wp.pl, name=Michael Jordan, description=Adding the ne...)">createCustomerWithValidKey({currency=EU, phone=657843891, email=michael88@wp.pl, name=Michael Jordan, description=Adding the ne...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.CustomerTests" class="method navigator-link" hash-for-method="createCustomerWithValidKey({currency=PLN, phone=123456789, email=mariusz88@gmial.com, name=Mariusz Podgorski, description=Addin...)">createCustomerWithValidKey({currency=PLN, phone=123456789, email=mariusz88@gmial.com, name=Mariusz Podgorski, description=Addin...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.CustomerTests" class="method navigator-link" hash-for-method="deleteCustomer({testData=N/A})">deleteCustomer({testData=N/A})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.CustomerTests" class="method navigator-link" hash-for-method="getCustomersWithSpecifiedEmailAddress({email=mariusz88@gmial.com, name=Mariusz Podgorski})">getCustomersWithSpecifiedEmailAddress({email=mariusz88@gmial.com, name=Mariusz Podgorski})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.CustomerTests" class="method navigator-link" hash-for-method="listAllCustomers({testData=N/A})">listAllCustomers({testData=N/A})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.CustomerTests" class="method navigator-link" hash-for-method="searchCustomersWithValidQueryParameter({email=krowa88@wp.pl, name=Marek Krowa})">searchCustomersWithValidQueryParameter({email=krowa88@wp.pl, name=Marek Krowa})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.CustomerTests" class="method navigator-link" hash-for-method="searchExistingTwoCustomers({testData=N/A})">searchExistingTwoCustomers({testData=N/A})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.CustomerTests" class="method navigator-link" hash-for-method="searchWithoutQueryParameter({testData=N/A})">searchWithoutQueryParameter({testData=N/A})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.CustomerTests" class="method navigator-link" hash-for-method="updateCustomer({description=Updating customer Mariusz Pdgorski})">updateCustomer({description=Updating customer Mariusz Pdgorski})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -119,9 +198,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.testcases.CustomerTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -131,6 +210,202 @@
                   </a> <!-- createCustomerWithInvalidEmail({email=marco88wp.pl, name=Marco Rubio}) -->
                   <span class="method-name">createCustomerWithInvalidEmail</span>
                   <span class="parameters">({email=marco88wp.pl, name=Marco Rubio})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at org.testng.Assert.assertEquals(Assert.java:1274)
+	at com.testcases.CustomerTests.createCustomerWithInvalidEmail(CustomerTests.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createCustomerWithInvalidPhoneNumber({phone=string, name=Marek Jaworski})">
+                  </a> <!-- createCustomerWithInvalidPhoneNumber({phone=string, name=Marek Jaworski}) -->
+                  <span class="method-name">createCustomerWithInvalidPhoneNumber</span>
+                  <span class="parameters">({phone=string, name=Marek Jaworski})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at org.testng.Assert.assertEquals(Assert.java:1274)
+	at com.testcases.CustomerTests.createCustomerWithInvalidPhoneNumber(CustomerTests.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testcases.CustomerTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RetrieveCustomer({deleted=true, name=Mariusz Podgorski})">
+                  </a> <!-- RetrieveCustomer({deleted=true, name=Mariusz Podgorski}) -->
+                  <span class="method-name">RetrieveCustomer</span>
+                  <span class="parameters">({deleted=true, name=Mariusz Podgorski})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createCustomerWithInvalidBalance({name=Marek Jaworski, balance=string})">
+                  </a> <!-- createCustomerWithInvalidBalance({name=Marek Jaworski, balance=string}) -->
+                  <span class="method-name">createCustomerWithInvalidBalance</span>
+                  <span class="parameters">({name=Marek Jaworski, balance=string})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createCustomerWithInvalidKey({currency=PLN, phone=654789543, email=marek88@gmial.com, name=Marek Jaworski, description=Adding the...)">
+                  </a> <!-- createCustomerWithInvalidKey({currency=PLN, phone=654789543, email=marek88@gmial.com, name=Marek Jaworski, description=Adding the...) -->
+                  <span class="method-name">createCustomerWithInvalidKey</span>
+                  <span class="parameters">({currency=PLN, phone=654789543, email=marek88@gmial.com, name=Marek Jaworski, description=Adding the new customer Mariusz Pdgorski to data base, balance=7000})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createCustomerWithValidKey({currency=USD, phone=987654321, email=robert@wp.pl, name=Robert Materka, description=Adding the new ...)">
+                  </a> <!-- createCustomerWithValidKey({currency=USD, phone=987654321, email=robert@wp.pl, name=Robert Materka, description=Adding the new ...) -->
+                  <span class="method-name">createCustomerWithValidKey</span>
+                  <span class="parameters">({currency=USD, phone=987654321, email=robert@wp.pl, name=Robert Materka, description=Adding the new customer Robert Materka to data base, balance=87650})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createCustomerWithValidKey({currency=EU, phone=657843891, email=michael88@wp.pl, name=Michael Jordan, description=Adding the ne...)">
+                  </a> <!-- createCustomerWithValidKey({currency=EU, phone=657843891, email=michael88@wp.pl, name=Michael Jordan, description=Adding the ne...) -->
+                  <span class="method-name">createCustomerWithValidKey</span>
+                  <span class="parameters">({currency=EU, phone=657843891, email=michael88@wp.pl, name=Michael Jordan, description=Adding the new customer Michael Jordan to data base, balance=65430})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createCustomerWithValidKey({currency=PLN, phone=123456789, email=mariusz88@gmial.com, name=Mariusz Podgorski, description=Addin...)">
+                  </a> <!-- createCustomerWithValidKey({currency=PLN, phone=123456789, email=mariusz88@gmial.com, name=Mariusz Podgorski, description=Addin...) -->
+                  <span class="method-name">createCustomerWithValidKey</span>
+                  <span class="parameters">({currency=PLN, phone=123456789, email=mariusz88@gmial.com, name=Mariusz Podgorski, description=Adding the new customer Mariusz Pdgorski to data base, balance=6000})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteCustomer({testData=N/A})">
+                  </a> <!-- deleteCustomer({testData=N/A}) -->
+                  <span class="method-name">deleteCustomer</span>
+                  <span class="parameters">({testData=N/A})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCustomersWithSpecifiedEmailAddress({email=mariusz88@gmial.com, name=Mariusz Podgorski})">
+                  </a> <!-- getCustomersWithSpecifiedEmailAddress({email=mariusz88@gmial.com, name=Mariusz Podgorski}) -->
+                  <span class="method-name">getCustomersWithSpecifiedEmailAddress</span>
+                  <span class="parameters">({email=mariusz88@gmial.com, name=Mariusz Podgorski})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="listAllCustomers({testData=N/A})">
+                  </a> <!-- listAllCustomers({testData=N/A}) -->
+                  <span class="method-name">listAllCustomers</span>
+                  <span class="parameters">({testData=N/A})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchCustomersWithValidQueryParameter({email=krowa88@wp.pl, name=Marek Krowa})">
+                  </a> <!-- searchCustomersWithValidQueryParameter({email=krowa88@wp.pl, name=Marek Krowa}) -->
+                  <span class="method-name">searchCustomersWithValidQueryParameter</span>
+                  <span class="parameters">({email=krowa88@wp.pl, name=Marek Krowa})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchExistingTwoCustomers({testData=N/A})">
+                  </a> <!-- searchExistingTwoCustomers({testData=N/A}) -->
+                  <span class="method-name">searchExistingTwoCustomers</span>
+                  <span class="parameters">({testData=N/A})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchWithoutQueryParameter({testData=N/A})">
+                  </a> <!-- searchWithoutQueryParameter({testData=N/A}) -->
+                  <span class="method-name">searchWithoutQueryParameter</span>
+                  <span class="parameters">({testData=N/A})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateCustomer({description=Updating customer Mariusz Pdgorski})">
+                  </a> <!-- updateCustomer({description=Updating customer Mariusz Pdgorski}) -->
+                  <span class="method-name">updateCustomer</span>
+                  <span class="parameters">({description=Updating customer Mariusz Pdgorski})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -138,7 +413,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Marian\AppData\Local\Temp\testng-eclipse-138012067\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Marian\AppData\Local\Temp\testng-eclipse-714833326\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -147,11 +422,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.testcases.CustomerTests&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;createCustomerWithInvalidEmail&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.testcases.CustomerTests --&gt;
+      &lt;class name=&quot;com.testcases.CustomerTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -191,16 +462,72 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(15);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createCustomerWithInvalidEmail')
+data.setCell(0, 1, 'createCustomerWithValidKey')
 data.setCell(0, 2, 'com.testcases.CustomerTests')
-data.setCell(0, 3, 2686);
+data.setCell(0, 3, 3024);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'listAllCustomers')
+data.setCell(1, 2, 'com.testcases.CustomerTests')
+data.setCell(1, 3, 908);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'updateCustomer')
+data.setCell(2, 2, 'com.testcases.CustomerTests')
+data.setCell(2, 3, 811);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'createCustomerWithValidKey')
+data.setCell(3, 2, 'com.testcases.CustomerTests')
+data.setCell(3, 3, 795);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'RetrieveCustomer')
+data.setCell(4, 2, 'com.testcases.CustomerTests')
+data.setCell(4, 3, 785);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'createCustomerWithValidKey')
+data.setCell(5, 2, 'com.testcases.CustomerTests')
+data.setCell(5, 3, 778);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'getCustomersWithSpecifiedEmailAddress')
+data.setCell(6, 2, 'com.testcases.CustomerTests')
+data.setCell(6, 3, 754);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'searchExistingTwoCustomers')
+data.setCell(7, 2, 'com.testcases.CustomerTests')
+data.setCell(7, 3, 744);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'createCustomerWithInvalidPhoneNumber')
+data.setCell(8, 2, 'com.testcases.CustomerTests')
+data.setCell(8, 3, 733);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'searchCustomersWithValidQueryParameter')
+data.setCell(9, 2, 'com.testcases.CustomerTests')
+data.setCell(9, 3, 719);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'searchWithoutQueryParameter')
+data.setCell(10, 2, 'com.testcases.CustomerTests')
+data.setCell(10, 3, 711);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'createCustomerWithInvalidBalance')
+data.setCell(11, 2, 'com.testcases.CustomerTests')
+data.setCell(11, 3, 682);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'createCustomerWithInvalidEmail')
+data.setCell(12, 2, 'com.testcases.CustomerTests')
+data.setCell(12, 3, 670);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'deleteCustomer')
+data.setCell(13, 2, 'com.testcases.CustomerTests')
+data.setCell(13, 3, 637);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'createCustomerWithInvalidKey')
+data.setCell(14, 2, 'com.testcases.CustomerTests')
+data.setCell(14, 3, 423);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -215,34 +542,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">10 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.testcases.CustomerTests</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">listAllCustomers</span>
-                <br/>
-                <span class="ignored-method-name">createCustomerWithInvalidKey</span>
-                <br/>
-                <span class="ignored-method-name">createCustomerWithInvalidBalance</span>
-                <br/>
-                <span class="ignored-method-name">searchExistingtwoCustomers</span>
-                <br/>
-                <span class="ignored-method-name">RetrieveCustomer</span>
-                <br/>
-                <span class="ignored-method-name">deleteCustomer</span>
-                <br/>
-                <span class="ignored-method-name">updateCustomer</span>
-                <br/>
-                <span class="ignored-method-name">createCustomerWithValidKey</span>
-                <br/>
-                <span class="ignored-method-name">createCustomerWithInvalidPhoneNumber</span>
-                <br/>
-                <span class="ignored-method-name">getCustomersWithSpecifiedEmailAddress</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -257,12 +559,72 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
+                <span class="method-name">createCustomerWithValidKey({currency=PLN, phone=123456789, email=mariusz88@gmial.com, name=Mariusz Podgorski, description=Addin...)</span>
+                <span class="method-start">531 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createCustomerWithValidKey({currency=USD, phone=987654321, email=robert@wp.pl, name=Robert Materka, description=Adding the new ...)</span>
+                <span class="method-start">3564 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createCustomerWithValidKey({currency=EU, phone=657843891, email=michael88@wp.pl, name=Michael Jordan, description=Adding the ne...)</span>
+                <span class="method-start">4345 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createCustomerWithInvalidKey({currency=PLN, phone=654789543, email=marek88@gmial.com, name=Marek Jaworski, description=Adding the...)</span>
+                <span class="method-start">5151 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">listAllCustomers({testData=N/A})</span>
+                <span class="method-start">5582 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchExistingTwoCustomers({testData=N/A})</span>
+                <span class="method-start">6499 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchCustomersWithValidQueryParameter({email=krowa88@wp.pl, name=Marek Krowa})</span>
+                <span class="method-start">7251 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createCustomerWithInvalidPhoneNumber({phone=string, name=Marek Jaworski})</span>
+                <span class="method-start">7976 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">createCustomerWithInvalidEmail({email=marco88wp.pl, name=Marco Rubio})</span>
-                <span class="method-start">631 ms</span>
+                <span class="method-start">8728 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCustomersWithSpecifiedEmailAddress({email=mariusz88@gmial.com, name=Mariusz Podgorski})</span>
+                <span class="method-start">9412 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchWithoutQueryParameter({testData=N/A})</span>
+                <span class="method-start">10173 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createCustomerWithInvalidBalance({name=Marek Jaworski, balance=string})</span>
+                <span class="method-start">10904 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateCustomer({description=Updating customer Mariusz Pdgorski})</span>
+                <span class="method-start">11594 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteCustomer({testData=N/A})</span>
+                <span class="method-start">12414 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">RetrieveCustomer({deleted=true, name=Mariusz Podgorski})</span>
+                <span class="method-start">13066 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3906 ms</span>
+                <span class="method-start">14363 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

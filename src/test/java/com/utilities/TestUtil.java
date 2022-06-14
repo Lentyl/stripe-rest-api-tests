@@ -17,7 +17,7 @@ public class TestUtil {
 	}
 
 	public static String getJsonKeyValue(Response json, String key) {
-
+		
 		ExtentListeners.testReport.get().info("Validating Value of Key : " + key);
 
 		return json.jsonPath().get(key).toString();
