@@ -19,4 +19,4 @@ Stripe API service documentation link: <a href="https://stripe.com/docs">Stripe 
 - Type: mvn test.
 
 <h3>Test results:</h3>
-The run report will be available after performing the run in the "target/reports" folder.
+The run report will be available after performing the run in the "reports" folder.
