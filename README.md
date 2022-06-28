@@ -1,4 +1,4 @@
-This project performs automatic tests on "Stripe API service" using JAVA, TestNG, Rest assure, DDT approach.
+This project performs automatic sample tests on "Stripe API service" using JAVA, TestNG, Rest assure, DDT approach.
 
 <h3>Prerequisites</h3>
 Git,
