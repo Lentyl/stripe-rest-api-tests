@@ -1,6 +1,5 @@
 package com.utilities;
 
-
 import org.json.JSONObject;
 import com.listeners.ExtentListeners;
 
@@ -18,11 +17,12 @@ public class TestUtil {
 
 	public static String getJsonKeyValue(Response json, String key) {
 		
+		
 		ExtentListeners.testReport.get().info("Validating Value of Key : " + key);
-
+	
 		return json.jsonPath().get(key).toString();
-
 	}
+	
 
 	public static boolean jsonHasValue(String jsonString, String checkedName) {
 		
@@ -30,5 +30,4 @@ public class TestUtil {
 		
 		return jsonString.contains(checkedName);
 	}
-	
 }

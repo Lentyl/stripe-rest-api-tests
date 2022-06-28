@@ -10,4 +10,24 @@
 			<class name="com.testcases.CustomerTests" />
 		</classes>
 	</test> <!-- Test -->
+	<test name="Balance API test">
+		<classes>
+			<class name="com.testcases.BalanceTests" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Product API test">
+		<classes>
+			<class name="com.testcases.ProductTests" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Paymentintents API test">
+		<classes>
+			<class name="com.testcases.PaymentintentsTests" />
+		</classes>
+	</test> <!-- Test -->
+		<test name="Invoice API test">
+		<classes>
+			<class name="com.testcases.InvoiceTests" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

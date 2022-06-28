@@ -11,9 +11,8 @@ public class DataUtil extends BaseTest {
 	@DataProvider(name="data")
 	public static Object[][] getData(Method m) {
 		int rows = excel.getRowCount(config.getProperty("testDataSheetName"));
-
 		String testName = m.getName();
-
+		
 		// Find the test case start row
 
 		int testCaseRowNum = 1;

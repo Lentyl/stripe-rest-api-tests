@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>TestNG:  Product API test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Product API test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 28 17:45:46 CEST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>11 seconds (11193 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.testcases.ProductTests.createProductWithoutValidName()'><b>createProductWithoutValidName</b><br>Test class: com.testcases.ProductTests<br>Parameters: {testData=N/A}</td>
+<td></td>
+<td>3</td>
+<td>com.testcases.ProductTests@18ca3c62</td></tr>
+<tr>
+<td title='com.testcases.ProductTests.createProduct()'><b>createProduct</b><br>Test class: com.testcases.ProductTests<br>Parameters: {currency=pln, name=Skis, price=50, description=Blue sport design skis, active=true}</td>
+<td></td>
+<td>0</td>
+<td>com.testcases.ProductTests@18ca3c62</td></tr>
+<tr>
+<td title='com.testcases.ProductTests.deleteProduct()'><b>deleteProduct</b><br>Test class: com.testcases.ProductTests<br>Parameters: {productIdIndex=0}</td>
+<td></td>
+<td>0</td>
+<td>com.testcases.ProductTests@18ca3c62</td></tr>
+<tr>
+<td title='com.testcases.ProductTests.createProduct()'><b>createProduct</b><br>Test class: com.testcases.ProductTests<br>Parameters: {currency=pln, name=Balloons, price=700, description=Very durable and colorful, active=false}</td>
+<td></td>
+<td>0</td>
+<td>com.testcases.ProductTests@18ca3c62</td></tr>
+<tr>
+<td title='com.testcases.ProductTests.retrieveProduct()'><b>retrieveProduct</b><br>Test class: com.testcases.ProductTests<br>Parameters: {testData=N/A}</td>
+<td></td>
+<td>2</td>
+<td>com.testcases.ProductTests@18ca3c62</td></tr>
+<tr>
+<td title='com.testcases.ProductTests.deleteProduct()'><b>deleteProduct</b><br>Test class: com.testcases.ProductTests<br>Parameters: {productIdIndex=1}</td>
+<td></td>
+<td>0</td>
+<td>com.testcases.ProductTests@18ca3c62</td></tr>
+<tr>
+<td title='com.testcases.ProductTests.listAllActiveProducts()'><b>listAllActiveProducts</b><br>Test class: com.testcases.ProductTests<br>Parameters: {active=true}</td>
+<td></td>
+<td>0</td>
+<td>com.testcases.ProductTests@18ca3c62</td></tr>
+<tr>
+<td title='com.testcases.ProductTests.updateProduct()'><b>updateProduct</b><br>Test class: com.testcases.ProductTests<br>Parameters: {currency=usd, name=rubber duck, price=199, description=Very durable and yellow, active=true}</td>
+<td></td>
+<td>0</td>
+<td>com.testcases.ProductTests@18ca3c62</td></tr>
+<tr>
+<td title='com.testcases.ProductTests.searchDeletedProduct()'><b>searchDeletedProduct</b><br>Test class: com.testcases.ProductTests<br>Parameters: {productIdIndex=0}</td>
+<td></td>
+<td>0</td>
+<td>com.testcases.ProductTests@18ca3c62</td></tr>
+</table><p>
+</body>
+</html>

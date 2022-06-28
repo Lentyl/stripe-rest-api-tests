@@ -19,8 +19,7 @@ public class CustomerAPI extends BaseTest {
 				.formParam("description", data.get("description"))
 				.formParam("name", data.get("name")).post(config.getProperty("customerAPIEndPoint"));
 
-		if (getJsonKeyValue(response, "name").equals("Mariusz Podgorski"))
-			RunTimeTestData.customerID = getJsonKeyValue(response, "id");
+			RunTimeTestData.customerIDList.add(getJsonKeyValue(response, "id"));
 
 		return response;
 
@@ -101,7 +100,7 @@ public class CustomerAPI extends BaseTest {
 
 		Response response = given().auth().basic(config.getProperty("validKey"), "")
 				.formParam("description", data.get("description"))
-				.post(config.getProperty("customerAPIEndPoint")+"/"+RunTimeTestData.customerID);
+				.post(config.getProperty("customerAPIEndPoint")+"/"+RunTimeTestData.customerIDList.get(0));
 
 		return response;
 	}
@@ -117,7 +116,7 @@ public class CustomerAPI extends BaseTest {
 	
 	public static Response deleteRqDeleteCustomer(Hashtable<String, String> data) {
 		Response response = given().auth().basic(config.getProperty("validKey"), "")
-				.delete(config.getProperty("customerAPIEndPoint")+"/"+RunTimeTestData.customerID);
+				.delete(config.getProperty("customerAPIEndPoint")+"/"+RunTimeTestData.customerIDList.get(0));
 
 		return response;
 	}
@@ -125,7 +124,7 @@ public class CustomerAPI extends BaseTest {
 	
 	public static Response getRqRetrieveCustomer(Hashtable<String, String> data) {
 		Response response = given().auth().basic(config.getProperty("validKey"), "")
-				.get(config.getProperty("customerAPIEndPoint")+"/"+RunTimeTestData.customerID);
+				.get(config.getProperty("customerAPIEndPoint")+"/"+RunTimeTestData.customerIDList.get(0));
 
 		return response;
 	}

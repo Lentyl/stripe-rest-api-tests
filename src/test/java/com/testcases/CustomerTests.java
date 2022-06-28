@@ -23,6 +23,10 @@ public class CustomerTests extends BaseTest {
 		Response res = CustomerAPI.postRqCreateCustomerWithValidKey(data);
 		
 		Assert.assertEquals(res.statusCode(), 200);
+		Assert.assertEquals(TestUtil.getJsonKeyValue(res, "email"), data.get("email"));
+		Assert.assertEquals(TestUtil.getJsonKeyValue(res, "description"), data.get("description"));
+		Assert.assertEquals(TestUtil.getJsonKeyValue(res, "name"), data.get("name"));
+
 	}
 
 	@Test(priority=2, dataProviderClass = DataUtil.class, dataProvider = "data")
@@ -70,7 +74,7 @@ public class CustomerTests extends BaseTest {
 	public void createCustomerWithInvalidPhoneNumber(Hashtable <String, String> data) {
 		Response res = CustomerAPI.postRqCreateCustomerWithInvalidPhoneNumber(data);
 		
-		Assert.assertEquals(res.statusCode(), 400);
+		Assert.assertEquals(res.statusCode(), 400, "This fail is caused by API defect!");
 		Assert.assertEquals(TestUtil.getJsonKeyValue(res, "error.message"), "Received unknown parameter: phone");
 	}
 	
@@ -78,7 +82,7 @@ public class CustomerTests extends BaseTest {
 	public void createCustomerWithInvalidEmail(Hashtable <String, String> data) {
 		Response res = CustomerAPI.postRqCreateCustomerWithInvalidEmail(data);
 		
-		Assert.assertEquals(res.statusCode(), 400);
+		Assert.assertEquals(res.statusCode(), 400, "This fail is caused by API defect!");
 		Assert.assertEquals(TestUtil.getJsonKeyValue(res, "error.message"), "Received unknown parameter: email");
 	}
 	
@@ -120,7 +124,11 @@ public class CustomerTests extends BaseTest {
 	
 	@Test(priority=12, dataProviderClass = DataUtil.class, dataProvider = "data")
 	public void deleteCustomer(Hashtable <String, String> data) {
-		Assert.assertEquals(CustomerAPI.deleteRqDeleteCustomer(data).statusCode(), 200);
+		Response res = CustomerAPI.deleteRqDeleteCustomer(data);
+
+		Assert.assertEquals(res.statusCode(), 200);
+		Assert.assertEquals(TestUtil.getJsonKeyValue(res, "object"), "customer");
+		Assert.assertEquals(TestUtil.getJsonKeyValue(res, "deleted"), "true");
 	}
 	
 	@Test(priority=13, dataProviderClass = DataUtil.class, dataProvider = "data")
@@ -128,7 +136,7 @@ public class CustomerTests extends BaseTest {
 		Response res = CustomerAPI.getRqRetrieveCustomer(data);
 		
 		Assert.assertEquals(res.statusCode(), 200);
-		Assert.assertEquals(TestUtil.getJsonKeyValue(res, "id"), RunTimeTestData.customerID);
+		Assert.assertEquals(TestUtil.getJsonKeyValue(res, "id"), RunTimeTestData.customerIDList.get(0));
 		Assert.assertEquals(TestUtil.getJsonKeyValue(res, "object"), "customer");
 		Assert.assertEquals(TestUtil.getJsonKeyValue(res, "deleted"), "true");
 	}

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>13/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 14 15:31:52 CEST 2022</td>
+<td>Started on:</td><td>Tue Jun 28 17:34:24 CEST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>13 seconds (13394 ms)</td>
+<tr><td>Total time:</td><td>9 seconds (9475 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,170 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.testcases.CustomerTests.createCustomerWithInvalidEmail()'><b>createCustomerWithInvalidEmail</b><br>Test class: com.testcases.CustomerTests<br>Parameters: {email=marco88wp.pl, name=Marco Rubio}</td>
-<td><div><pre>java.lang.AssertionError: expected [400] but found [200]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1240)
-	at org.testng.Assert.assertEquals(Assert.java:1274)
-	at com.testcases.CustomerTests.createCustomerWithInvalidEmail(CustomerTests.java:81)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1163706136", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1163706136'><pre>java.lang.AssertionError: expected [400] but found [200]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1240)
-	at org.testng.Assert.assertEquals(Assert.java:1274)
-	at com.testcases.CustomerTests.createCustomerWithInvalidEmail(CustomerTests.java:81)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.testcases.CustomerTests@5bf22f18</td></tr>
-<tr>
-<td title='com.testcases.CustomerTests.createCustomerWithInvalidPhoneNumber()'><b>createCustomerWithInvalidPhoneNumber</b><br>Test class: com.testcases.CustomerTests<br>Parameters: {phone=string, name=Marek Jaworski}</td>
-<td><div><pre>java.lang.AssertionError: expected [400] but found [200]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1240)
-	at org.testng.Assert.assertEquals(Assert.java:1274)
-	at com.testcases.CustomerTests.createCustomerWithInvalidPhoneNumber(CustomerTests.java:73)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1888353808", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1888353808'><pre>java.lang.AssertionError: expected [400] but found [200]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1240)
-	at org.testng.Assert.assertEquals(Assert.java:1274)
-	at com.testcases.CustomerTests.createCustomerWithInvalidPhoneNumber(CustomerTests.java:73)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.testcases.CustomerTests@5bf22f18</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -239,70 +75,50 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.testcases.CustomerTests.deleteCustomer()'><b>deleteCustomer</b><br>Test class: com.testcases.CustomerTests<br>Parameters: {testData=N/A}</td>
+<td title='com.testcases.ProductTests.retrieveProduct()'><b>retrieveProduct</b><br>Test class: com.testcases.ProductTests<br>Parameters: {testData=N/A}</td>
 <td></td>
 <td>0</td>
-<td>com.testcases.CustomerTests@5bf22f18</td></tr>
+<td>com.testcases.ProductTests@132ddbab</td></tr>
 <tr>
-<td title='com.testcases.CustomerTests.searchExistingTwoCustomers()'><b>searchExistingTwoCustomers</b><br>Test class: com.testcases.CustomerTests<br>Parameters: {testData=N/A}</td>
+<td title='com.testcases.ProductTests.searchDeletedProduct()'><b>searchDeletedProduct</b><br>Test class: com.testcases.ProductTests<br>Parameters: {productIdIndex=0}</td>
 <td></td>
 <td>0</td>
-<td>com.testcases.CustomerTests@5bf22f18</td></tr>
+<td>com.testcases.ProductTests@132ddbab</td></tr>
 <tr>
-<td title='com.testcases.CustomerTests.searchWithoutQueryParameter()'><b>searchWithoutQueryParameter</b><br>Test class: com.testcases.CustomerTests<br>Parameters: {testData=N/A}</td>
+<td title='com.testcases.ProductTests.deleteProduct()'><b>deleteProduct</b><br>Test class: com.testcases.ProductTests<br>Parameters: {productIdIndex=0}</td>
 <td></td>
 <td>0</td>
-<td>com.testcases.CustomerTests@5bf22f18</td></tr>
+<td>com.testcases.ProductTests@132ddbab</td></tr>
 <tr>
-<td title='com.testcases.CustomerTests.createCustomerWithValidKey()'><b>createCustomerWithValidKey</b><br>Test class: com.testcases.CustomerTests<br>Parameters: {currency=USD, phone=987654321, email=robert@wp.pl, name=Robert Materka, description=Adding the new customer Robert Materka to data base, balance=87650}</td>
-<td></td>
-<td>0</td>
-<td>com.testcases.CustomerTests@5bf22f18</td></tr>
-<tr>
-<td title='com.testcases.CustomerTests.createCustomerWithValidKey()'><b>createCustomerWithValidKey</b><br>Test class: com.testcases.CustomerTests<br>Parameters: {currency=EU, phone=657843891, email=michael88@wp.pl, name=Michael Jordan, description=Adding the new customer Michael Jordan to data base, balance=65430}</td>
-<td></td>
-<td>0</td>
-<td>com.testcases.CustomerTests@5bf22f18</td></tr>
-<tr>
-<td title='com.testcases.CustomerTests.listAllCustomers()'><b>listAllCustomers</b><br>Test class: com.testcases.CustomerTests<br>Parameters: {testData=N/A}</td>
-<td></td>
-<td>0</td>
-<td>com.testcases.CustomerTests@5bf22f18</td></tr>
-<tr>
-<td title='com.testcases.CustomerTests.RetrieveCustomer()'><b>RetrieveCustomer</b><br>Test class: com.testcases.CustomerTests<br>Parameters: {deleted=true, name=Mariusz Podgorski}</td>
-<td></td>
-<td>0</td>
-<td>com.testcases.CustomerTests@5bf22f18</td></tr>
-<tr>
-<td title='com.testcases.CustomerTests.createCustomerWithInvalidBalance()'><b>createCustomerWithInvalidBalance</b><br>Test class: com.testcases.CustomerTests<br>Parameters: {name=Marek Jaworski, balance=string}</td>
-<td></td>
-<td>0</td>
-<td>com.testcases.CustomerTests@5bf22f18</td></tr>
-<tr>
-<td title='com.testcases.CustomerTests.searchCustomersWithValidQueryParameter()'><b>searchCustomersWithValidQueryParameter</b><br>Test class: com.testcases.CustomerTests<br>Parameters: {email=krowa88@wp.pl, name=Marek Krowa}</td>
-<td></td>
-<td>0</td>
-<td>com.testcases.CustomerTests@5bf22f18</td></tr>
-<tr>
-<td title='com.testcases.CustomerTests.createCustomerWithInvalidKey()'><b>createCustomerWithInvalidKey</b><br>Test class: com.testcases.CustomerTests<br>Parameters: {currency=PLN, phone=654789543, email=marek88@gmial.com, name=Marek Jaworski, description=Adding the new customer Mariusz Pdgorski to data base, balance=7000}</td>
-<td></td>
-<td>0</td>
-<td>com.testcases.CustomerTests@5bf22f18</td></tr>
-<tr>
-<td title='com.testcases.CustomerTests.createCustomerWithValidKey()'><b>createCustomerWithValidKey</b><br>Test class: com.testcases.CustomerTests<br>Parameters: {currency=PLN, phone=123456789, email=mariusz88@gmial.com, name=Mariusz Podgorski, description=Adding the new customer Mariusz Pdgorski to data base, balance=6000}</td>
+<td title='com.testcases.ProductTests.createProduct()'><b>createProduct</b><br>Test class: com.testcases.ProductTests<br>Parameters: {currency=pln, name=Skis, price=50, description=Blue sport design skis, active=true}</td>
 <td></td>
 <td>3</td>
-<td>com.testcases.CustomerTests@5bf22f18</td></tr>
+<td>com.testcases.ProductTests@132ddbab</td></tr>
 <tr>
-<td title='com.testcases.CustomerTests.getCustomersWithSpecifiedEmailAddress()'><b>getCustomersWithSpecifiedEmailAddress</b><br>Test class: com.testcases.CustomerTests<br>Parameters: {email=mariusz88@gmial.com, name=Mariusz Podgorski}</td>
+<td title='com.testcases.ProductTests.listAllActiveProducts()'><b>listAllActiveProducts</b><br>Test class: com.testcases.ProductTests<br>Parameters: {active=true}</td>
 <td></td>
 <td>0</td>
-<td>com.testcases.CustomerTests@5bf22f18</td></tr>
+<td>com.testcases.ProductTests@132ddbab</td></tr>
 <tr>
-<td title='com.testcases.CustomerTests.updateCustomer()'><b>updateCustomer</b><br>Test class: com.testcases.CustomerTests<br>Parameters: {description=Updating customer Mariusz Pdgorski}</td>
+<td title='com.testcases.ProductTests.deleteProduct()'><b>deleteProduct</b><br>Test class: com.testcases.ProductTests<br>Parameters: {productIdIndex=1}</td>
 <td></td>
 <td>0</td>
-<td>com.testcases.CustomerTests@5bf22f18</td></tr>
+<td>com.testcases.ProductTests@132ddbab</td></tr>
+<tr>
+<td title='com.testcases.ProductTests.createProductWithoutValidName()'><b>createProductWithoutValidName</b><br>Test class: com.testcases.ProductTests<br>Parameters: {testData=N/A}</td>
+<td></td>
+<td>0</td>
+<td>com.testcases.ProductTests@132ddbab</td></tr>
+<tr>
+<td title='com.testcases.ProductTests.createProduct()'><b>createProduct</b><br>Test class: com.testcases.ProductTests<br>Parameters: {currency=pln, name=Balloons, price=700, description=Very durable and colorful, active=false}</td>
+<td></td>
+<td>0</td>
+<td>com.testcases.ProductTests@132ddbab</td></tr>
+<tr>
+<td title='com.testcases.ProductTests.updateProduct()'><b>updateProduct</b><br>Test class: com.testcases.ProductTests<br>Parameters: {currency=usd, name=rubber duck, price=199, description=Very durable and yellow, active=true}</td>
+<td></td>
+<td>0</td>
+<td>com.testcases.ProductTests@132ddbab</td></tr>
 </table><p>
 </body>
 </html>
