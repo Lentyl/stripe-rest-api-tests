@@ -1,9 +1,9 @@
 This project performs automatic tests on "Stripe API service" using JAVA, TestNG, Rest assure, DDT approach.
 
 <h3>Prerequisites</h3>
-Git
-Terminal (cmdr)
-Maven
+Git,
+Terminal (cmdr),
+Maven,
 JAVA 8
 
 <h3>Service description</h3>
